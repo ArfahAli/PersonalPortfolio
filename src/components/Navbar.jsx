@@ -14,7 +14,7 @@ const Navbar = ({
       className='flex justify-between items-center relative
       shadow-md bg-[#0a0a0a]'
     >
-      <Logo font='font-logoArfah' text='Hanzla' />
+      <Logo font='font-logoArfah' text='Arfah' />
       <div className='md:hidden'>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}

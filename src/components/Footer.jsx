@@ -9,9 +9,9 @@ const Footer = () => {
       <div className='container  py-0'>
         <div className='flex flex-wrap justify-between items-center'>
           <div className='w-full lg:w-1/2 mb-6 lg:mb-0'>
-            <Logo font='font-logoArfah' text='Hanzla' />
+            <Logo font='font-logoArfah' text='Arfah' />
             <p className='mt-[-23px] mb-5 text-[0.8em] mx-[9px]'>
-              Your Coding Guy<span className='text-purple text-xl'>.</span>
+              Your Coding Girl<span className='text-purple text-xl'>.</span>
             </p>
             <h2 className='text-3xl font-bold mb-4'>Contact Me</h2>
             <form className='space-y-4 max-w-md mb-6'>
@@ -45,23 +45,20 @@ const Footer = () => {
           <div className='w-full lg:w-1/2 lg:text-right'>
             <h3 className='text-3xl font-semibold mb-4'>Get in Touch</h3>
             <ul className='space-y-4'>
-              <li className='flex justify-end items-center'>
-                <FaPhone className='mr-2' />
-                <span>+92 324 9163 579</span>
-              </li>
+            
               <li className='flex justify-end items-center'>
                 <FaMapMarkerAlt className='mr-2' />
-                <span>Hanzla Nouman, Abbottabad, Pakistan</span>
+                <span>Arfah Ali, Wah, Pakistan</span>
               </li>
               <li className='flex justify-end items-center'>
                 <FaEnvelope className='mr-2' />
-                <span>hanzlanouman@gmail.com</span>
+                <span>arfahali994@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
         <div className='border-t border-gray-700 text-center  pt-3'>
-          <p className='text-md'>Made with ❤️ by Hanzla.</p>
+          <p className='text-md'>Made with ❤️ by Arfah.</p>
 
           <p className='text-sm mt-1'>
             {' '}
