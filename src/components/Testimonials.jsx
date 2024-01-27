@@ -13,8 +13,8 @@ const testimonialsData = [
   },
   {
     id: 2,
-    name: 'Hanzla',
-    handle: '@hanzla',
+    name: 'Esha Mehmood',
+    handle: '@eshamehmood',
     avatar: 'https://source.unsplash.com/random/128x128?sig=3',
     testimonial:
       'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
@@ -22,8 +22,8 @@ const testimonialsData = [
   },
   {
     id: 3,
-    name: 'Arfah Ali',
-    handle: '@arfahali',
+    name: 'Ali Muhammad',
+    handle: '@alimuhammad',
     avatar: 'https://source.unsplash.com/random/128x128?sig=1',
     testimonial:
       'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',

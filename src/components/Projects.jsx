@@ -4,29 +4,30 @@ import { useInView } from 'react-intersection-observer';
 
 const projects = [
   {
-    title: 'Dev Portfolio',
+    title: 'Clean Clothes - Laundry App',
     description:
-      'A Developer Portfolio website made in React. Fully customizable and dynamic.',
-    image: '/dev-portfolio.png',
-    githubLink: 'https://github.com/hanzlanouman/new-portfolio',
+      'A Laundry App made in React. Fully customizable and dynamic.',
+    image: '/CleanClothes.png',
+    githubLink: 'https://github.com/ArfahAli/Clean-Clothes-LaundaryApp',
     // liveLink: 'https://project-one-live-link.com',
     tech: ['React', 'TailwindCSS', 'Firebase'],
+  },
+  
+  {
+    title: 'E-Commerce Web App',
+    description: ' A fully functional E-Commerce Web App made with MERN Stack.',
+    image: '/ecomm.png',
+    githubLink: 'https://github.com/ArfahAli/E-Commerce-Website---MERN-Stack',
+    // liveLink: 'https://project-three-live-link.com',
+    tech: ['React', 'Tailwind', 'MongoDB', 'Express', 'Node'],
   },
   {
     title: 'Societalize - Social Network App',
     description: 'A Campus Social Network made with React Native & Firebase.',
     image: '/societalize.png',
-    githubLink: 'https://github.com/hanzlanouman/societalize',
+    githubLink: 'https://github.com/ArfahAli/societalize',
 
     tech: ['React Native', 'Firebase', 'React Navigation', 'Expo'],
-  },
-  {
-    title: 'E-Commerce Web App',
-    description: ' A fully functional E-Commerce Web App made with MERN Stack.',
-    image: '/ecomm.png',
-    githubLink: 'https://github.com/hanzlanouman/kidzwear',
-    // liveLink: 'https://project-three-live-link.com',
-    tech: ['React', 'Tailwind', 'MongoDB', 'Express', 'Node'],
   },
 ];
 
