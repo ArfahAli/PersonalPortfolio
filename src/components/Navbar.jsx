@@ -62,7 +62,7 @@ const Navbar = ({
             marginRight: '1rem',
           }}
           onClick={() => {
-            window.open('https://linkedin.com/in/hanzlanouman', '_blank');
+            window.open('https://www.linkedin.com/in/web-and-app-developer-expert/', '_blank');
           }}
         >
           Get In Touch
