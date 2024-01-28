@@ -16,8 +16,8 @@ const projects = [
   {
     title: 'E-Commerce Web App',
     description: ' A fully functional E-Commerce Web App made with MERN Stack.',
-    image: '/ecomm.png',
-    githubLink: 'https://github.com/ArfahAli/E-Commerce-Website---MERN-Stack',
+    image: '/website.png',
+    githubLink: 'https://fa21-bse-080.netlify.app',
     // liveLink: 'https://project-three-live-link.com',
     tech: ['React', 'Tailwind', 'MongoDB', 'Express', 'Node'],
   },
