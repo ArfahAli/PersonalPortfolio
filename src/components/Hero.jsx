@@ -64,25 +64,17 @@ const Hero = () => {
             </div>
           ) : null}
           <p className='mb-4 text-[1.1rem] text-gray-300 mt-3'>
-            Welcome to Arfah's app wonderland—where your ideas don't just come
-            alive, they throw a little app party!
+            Welcome to Arfah's Portfolio!
           </p>
           <p className='mb-2 text-[1.5rem]'>
             Who am I<span className='text-purpleLighter text-3xl'> ?</span>
           </p>
           <p className='mb-2 text-[1.2rem]'>
-            I'm a software engineering student with a focus on app development.
-            <span className='text-[1.19rem] text-gray-300'>
+          I'm a skilled Full Stack and Mobile App developer from Pakistan.            <span className='text-[1.19rem] text-gray-300'>
               {' '}
-              My skills in this domain have empowered me to support numerous
-              clients in enhancing their sales and growing their businesses
-              through captivating mobile applications. As mobile usage continues
-              to rise, having a top-notch app is crucial to connect with your
-              target audience. That's why selecting an expert in the field
-              matters. I'm committed to delivering outstanding work on time and
-              within your budget. If you have any questions or want to discuss a
-              project, feel free to reach out. I'm here to assist you and wish
-              you an amazing day.
+
+              I'm Specialized in a range of technologies including React, React Native, HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, Next.js, Node.js, Express.js, MongoDB, and Firebase. I am well known for my expertise in developing E-commerce websites as a Full Stack developer as I am great at paying attention to the details.
+              When I am working with clients globally I have four principles: Prioritize Client Satisfaction, emphasize clear Communication, am Adaptable, and i focus on quality. 
             </span>
           </p>
           {/* <p className='mb-6 text-[1.2rem] text-gray-300'>
