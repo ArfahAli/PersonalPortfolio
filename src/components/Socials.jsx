@@ -1,58 +1,86 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 import {
-  FaHtml5,
-  FaJsSquare,
-  FaReact,
-  FaNode,
-  FaJava,
-  FaAndroid,
+  FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
 } from 'react-icons/fa';
-import { SiMongodb, SiMysql } from 'react-icons/si';
+import { useInView } from 'react-intersection-observer';
 
-const Skills = () => {
+const Socials = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
 
-  const techIcons = [
-    { icon: FaHtml5, label: 'HTML/CSS', color: '#e34c26' },
-    { icon: FaJsSquare, label: 'JavaScript', color: '#f7df1e' },
-    { icon: FaReact, label: 'React', color: '#61dafb' },
-    { icon: FaNode, label: 'Node.js', color: '#68a063' },
-    { icon: SiMongodb, label: 'MongoDB', color: '#47A248' },
-    { icon: FaJava, label: 'Java', color: '#007396' },
-    { icon: SiMysql, label: 'MySQL', color: '#4479A1' },
-    { icon: FaAndroid, label: 'Android', color: '#3ddc84' },
+  const socialLinks = [
+    {
+      icon: FaLinkedin,
+      url: 'https://www.linkedin.com/in/hanzlanouman',
+      color: '#0077b5',
+      label: 'LinkedIn',
+    },
+    {
+      icon: FaGithub,
+      url: 'https://github.com/hanzlanouman',
+      color: '#333',
+      label: 'GitHub',
+    },
+    {
+      icon: FaFacebook,
+      url: 'https://www.facebook.com/hanzlanoumanofficiall',
+      color: '#4267B2',
+      label: 'Facebook',
+    },
+    {
+      icon: FaTwitter,
+      url: 'https://twitter.com/hanzlanowman',
+      color: '#1DA1F2',
+      label: 'Twitter',
+    },
+    {
+      icon: FaInstagram,
+      url: 'https://www.instagram.com/hanzlanouman',
+      color: '#E1306C',
+      label: 'Instagram',
+    },
   ];
 
   return (
-    <div className='text-white py-10'>
-      <div className='container mx-auto text-center'>
-        {/* ... */}
-        <div className='flex flex-wrap justify-center gap-10 mt-16'>
-          {techIcons.map((tech, index) => {
-            const Icon = tech.icon;
-            return (
-              <div
-                key={index}
-                className={`flex flex-col items-center w-36 h-36 md:w-24 md:h-24 lg:w-28 lg:h-28 cursor-pointer transition-opacity duration-700 ${
-                  inView ? 'opacity-100' : 'opacity-0'
-                }`}
-                style={{ transitionDelay: `${index * 75}ms` }}
-              >
-                <span style={{ color: tech.color }}>
-                  <Icon className='text-5xl md:text-6xl lg:text-7xl hover:brightness-125 duration-500 hover:scale-110' />
-                </span>
-                <span className='mt-2 text-sm md:text-base'>{tech.label}</span>
-              </div>
-            );
-          })}
+    <div className='text-white pt-20'>
+      <div className='container mx-auto px-2 text-center'>
+        <div ref={ref}>
+          <h2 className='text-4xl font-bold mb-6'>
+            Connect with Me
+            <div
+              className={`h-1 bg-white transition-all duration-700 ${
+                inView ? 'w-[10em]' : 'w-0'
+              } mx-auto mt-2`}
+              style={{ transitionDelay: '300ms' }}
+            />
+          </h2>
+        </div>
+        <div className='flex flex-wrap justify-center items-center gap-16 mt-16'>
+          {socialLinks.map((social, index) => (
+            <a
+              key={index}
+              href={social.url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-110  '
+              aria-label={social.label}
+            >
+              <social.icon
+                className='text-6xl '
+                style={{ color: social.color }}
+              />
+            </a>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default Socials;
