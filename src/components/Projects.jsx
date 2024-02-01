@@ -9,6 +9,8 @@ const projects = [
       'A Laundry App made in React. Fully customizable and dynamic.',
     image: '/CleanClothes.png',
     githubLink: 'https://github.com/ArfahAli/Clean-Clothes-LaundaryApp',
+    liveLink: 'https://clean-clothes-laundry-app.vercel.app/',
+
     // liveLink: 'https://project-one-live-link.com',
     tech: ['React', 'TailwindCSS', 'Firebase'],
   },
@@ -17,7 +19,9 @@ const projects = [
     title: 'E-Commerce Web App',
     description: ' A fully functional E-Commerce Web App made with MERN Stack.',
     image: '/website.png',
-    githubLink: 'https://fa21-bse-080.netlify.app',
+    githubLink: 'https://github.com/ArfahAli/E-Commerce-Website---MERN-Stack',
+    liveLink: 'https://fa21-bse-080.netlify.app',
+
     // liveLink: 'https://project-three-live-link.com',
     tech: ['React', 'Tailwind', 'MongoDB', 'Express', 'Node'],
   },
@@ -26,6 +30,7 @@ const projects = [
     description: 'A Campus Social Network made with React Native & Firebase.',
     image: '/societalize.png',
     githubLink: 'https://github.com/ArfahAli/societalize',
+    liveLink: 'https://clean-clothes-laundry-app.vercel.app/',
 
     tech: ['React Native', 'Firebase', 'React Navigation', 'Expo'],
   },
@@ -54,7 +59,7 @@ const Projects = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6'>
           {projects.map((project, index) => (
             <a
-              href={project.githubLink}
+              href={project.liveLink}
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -88,15 +93,15 @@ const Projects = () => {
                   </div>
                   <div className='flex justify-between'>
                     <a
-                      href={project.githubLink}
+                      href={project.liveLink}
                       target='_blank'
                       rel='noopener noreferrer'
                       className='flex items-center text-purple-500 hover:text-purple-300 transition-colors duration-300  px-4 py-1 hover:bg-gray-500 rounded-full'
                     >
                       <FaGithub className='mr-2' />
-                      GitHub
+                     <a href={project.githubLink}> GitHub </a>
                     </a>
-                    {project.liveLink && (
+                    {/* {project.liveLink && (
                       <a
                         href={project.liveLink}
                         target='_blank'
@@ -106,7 +111,7 @@ const Projects = () => {
                         <FaExternalLinkAlt className='mr-2' />
                         Live
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

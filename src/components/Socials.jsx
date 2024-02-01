@@ -17,31 +17,31 @@ const Socials = () => {
   const socialLinks = [
     {
       icon: FaLinkedin,
-      url: 'https://www.linkedin.com/in/hanzlanouman',
+      url: 'https://www.linkedin.com/in/web-and-app-developer-expert/',
       color: '#0077b5',
       label: 'LinkedIn',
     },
     {
       icon: FaGithub,
-      url: 'https://github.com/hanzlanouman',
+      url: 'https://github.com/ArfahAli',
       color: '#333',
       label: 'GitHub',
     },
     {
       icon: FaFacebook,
-      url: 'https://www.facebook.com/hanzlanoumanofficiall',
+      url: 'https://www.facebook.com/alif.ain.1800',
       color: '#4267B2',
       label: 'Facebook',
     },
     {
       icon: FaTwitter,
-      url: 'https://twitter.com/hanzlanowman',
+      url: 'https://twitter.com/',
       color: '#1DA1F2',
       label: 'Twitter',
     },
     {
       icon: FaInstagram,
-      url: 'https://www.instagram.com/hanzlanouman',
+      url: 'https://www.instagram.com/arfah_ali_/',
       color: '#E1306C',
       label: 'Instagram',
     },
