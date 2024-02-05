@@ -2,32 +2,28 @@ import React from 'react';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import Logo from './Logo';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+import { useRef } from 'react';
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    email: '',
-    message: '',
-  });
+  const form = useRef();
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Here you can add the logic to send data to your server or API endpoint
-    // Example using fetch:
-    // fetch('YOUR_API_ENDPOINT', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify(formData),
-    // })
-    // .then(response => response.json())
-    // .then(data => console.log(data))
-    // .catch(error => console.error('Error:', error));
-    
-    console.log('Form Submitted', formData);
-    // Reset form or show success message
+
+    emailjs
+      .sendForm('service_a6ty122', 'template_hnkrb8q', form.current, {
+        publicKey: 'rY4Hvr7vnKlUHcrJt',
+      })
+      .then(
+        () => {
+          console.log('Message sent sucessfully!');
+          alert('Message sent sucessfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -41,34 +37,32 @@ const Footer = () => {
               Your Coding Girl<span className='text-purple text-xl'>.</span>
             </p>
             <h2 className='text-3xl font-bold mb-4'>Contact Me</h2>
-           <form onSubmit={handleSubmit} className='space-y-4 max-w-md mb-6'>
+           <form ref={form} onSubmit={sendEmail} className='space-y-4 max-w-md mb-6'>
           <div className='flex flex-col sm:flex-row gap-4'>
             <input
               type='text'
-              name='firstName'
+              name="user_name"
               placeholder='First Name'
               className='w-full p-2 bg-white border-2 border-gray-700 rounded focus:outline-none focus:border-purple text-black'
-              value={formData.firstName}
-              onChange={handleChange}
+             
             />
             <input
               type='email'
-              name='email'
+              name='user_email'
               placeholder='Enter Your Email'
               className='w-full p-2 bg-white border-2 border-gray-700 rounded focus:outline-none focus:border-purple text-black'
-              value={formData.email}
-              onChange={handleChange}
+             
             />
           </div>
           <textarea
             name='message'
             placeholder='Message'
             className='w-full p-2 bg-white border-2 border-gray-700 rounded focus:outline-none focus:border-purple text-black'
-            value={formData.message}
-            onChange={handleChange}
+           
           ></textarea>
           <button
             type='submit'
+           value="Send" 
             className='w-full py-2 border-2 border-purple bg-[#121212] text-white rounded transition duration-300 ease-in-out hover:bg-purple'
           >
             SEND
