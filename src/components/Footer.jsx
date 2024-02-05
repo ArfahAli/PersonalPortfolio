@@ -40,6 +40,7 @@ const Footer = () => {
            <form ref={form} onSubmit={sendEmail} className='space-y-4 max-w-md mb-6'>
           <div className='flex flex-col sm:flex-row gap-4'>
             <input
+              required
               type='text'
               name="user_name"
               placeholder='First Name'
@@ -47,6 +48,7 @@ const Footer = () => {
              
             />
             <input
+              required
               type='email'
               name='user_email'
               placeholder='Enter Your Email'
@@ -55,6 +57,7 @@ const Footer = () => {
             />
           </div>
           <textarea
+          required
             name='message'
             placeholder='Message'
             className='w-full p-2 bg-white border-2 border-gray-700 rounded focus:outline-none focus:border-purple text-black'
