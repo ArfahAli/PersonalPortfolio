@@ -57,7 +57,7 @@ const Hero = () => {
               <div className='w-96 h-96 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[25rem] xl:h-[25rem] 2xl:w-[32rem] 2xl:h-[32rem]  overflow-hidden rounded-full'>
                 <img
                   className='object-cover object-center w-full h-full'
-                  src='/arfah.jpg'
+                  src='./arfah.png'
                   alt='Social Media Expert'
                 />
               </div>
@@ -88,7 +88,7 @@ const Hero = () => {
         </div>
 
         {!isMobile ? (
-          <div className='flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10'>
+          <div className='flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10 sm:'>
             <div className='w-96 h-96 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[25rem] xl:h-[25rem] 2xl:w-[32rem] 2xl:h-[32rem]  overflow-hidden rounded-full'>
               <img
                 className='object-cover object-center w-full h-full'
