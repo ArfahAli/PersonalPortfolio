@@ -8,7 +8,7 @@ const testimonialsData = [
     handle: '@mukhtiarzamin',
     avatar: 'https://source.unsplash.com/random/128x128?sig=2',
     testimonial:
-      'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
+      'Exceptional work by Arfah! The landing page exceeded my expectations – visually stunning, seamlessly functional, and a true reflection of our brand. Highly recommend!',
     hashtag: '#gettingtheidea',
   },
   {
@@ -26,7 +26,7 @@ const testimonialsData = [
     handle: '@alimuhammad',
     avatar: 'https://source.unsplash.com/random/128x128?sig=1',
     testimonial:
-      'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
+      'Big shoutout to Arfah for transforming our e-commerce site! Seamless functionality, eye-catching design, and a significant boost in user experience. Highly recommend this skilled developer for e-commerce projects!',
     hashtag: '#right',
   },
   // ... Add more testimonials as needed
